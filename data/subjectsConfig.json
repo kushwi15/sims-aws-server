@@ -1,0 +1,60 @@
+{
+  "subjects": [
+    {
+      "id": "math",
+      "name": "Mathematics",
+      "code": "MATH",
+      "category": "Core",
+      "gradeLevels": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"]
+    },
+    {
+      "id": "science",
+      "name": "Science",
+      "code": "SCI",
+      "category": "Core",
+      "gradeLevels": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"]
+    },
+    {
+      "id": "english",
+      "name": "English",
+      "code": "ENG",
+      "category": "Core",
+      "gradeLevels": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"]
+    },
+    {
+      "id": "social_studies",
+      "name": "Social Studies",
+      "code": "SOC",
+      "category": "Core",
+      "gradeLevels": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"]
+    },
+    {
+      "id": "computer_science",
+      "name": "Computer Science",
+      "code": "CS",
+      "category": "Elective",
+      "gradeLevels": ["6", "7", "8", "9", "10", "11", "12"]
+    },
+    {
+      "id": "physical_education",
+      "name": "Physical Education",
+      "code": "PE",
+      "category": "Core",
+      "gradeLevels": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"]
+    },
+    {
+      "id": "art",
+      "name": "Art",
+      "code": "ART",
+      "category": "Elective",
+      "gradeLevels": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"]
+    },
+    {
+      "id": "music",
+      "name": "Music",
+      "code": "MUS",
+      "category": "Elective",
+      "gradeLevels": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"]
+    }
+  ]
+} 
