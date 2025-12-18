@@ -54,7 +54,12 @@ app.use(cors({
     'https://sims-frontend-dun.vercel.app',
     'https://sims-client-govt.vercel.app',
     'https://sims-client-bdts-govt.vercel.app',
-    'http://40.192.110.75:5000'
+
+    // Sai
+    'http://40.192.110.75:5000',
+
+    // Kushwinth
+    'http://16.171.13.197:5000'
   ],
   credentials: true
 }));
