@@ -122,14 +122,14 @@ exports.updateTeacher = async (req, res) => {
 
         if (imageUrl) {
           AWS.config.update({
-            region: 'ap-south-1', // use your bucket's region
+            region: 'eu-north-1', // use your bucket's region
           });
 
           const s3 = new AWS.S3();
           const url = new URL(imageUrl);
           const key = decodeURIComponent(url.pathname.substring(1));
           const s3Params = {
-            Bucket: 'sims-school-files',
+            Bucket: 'sims-school',
             Key: key
           };
           await s3.deleteObject(s3Params).promise();
@@ -172,14 +172,14 @@ exports.deleteTeacher = async (req, res) => {
 
     if (publicId) {
       AWS.config.update({
-        region: 'ap-south-1', // use your bucket's region
+        region: 'eu-north-1', // use your bucket's region
       });
 
       const s3 = new AWS.S3();
       const url = new URL(imageUrl);
       const key = decodeURIComponent(url.pathname.substring(1));
       const s3Params = {
-        Bucket: 'sims-school-files',
+        Bucket: 'sims-school',
         Key: key
       };
       await s3.deleteObject(s3Params).promise();

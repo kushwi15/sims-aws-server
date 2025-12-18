@@ -110,14 +110,14 @@ exports.updateResource = async (req, res) => {
 
         if (resourceUrl) {
           AWS.config.update({
-            region: 'ap-south-1', // use your bucket's region
+            region: 'eu-north-1', // use your bucket's region
           });
 
           const s3 = new AWS.S3();
           const url = new URL(resourceUrl);
           const key = decodeURIComponent(url.pathname.substring(1));
           const s3Params = {
-            Bucket: 'sims-school-files',
+            Bucket: 'sims-school',
             Key: key
           };
           await s3.deleteObject(s3Params).promise();
@@ -154,14 +154,14 @@ exports.updateResourceUnderMyAdmin = async (req, res) => {
 
         if (resourceUrl) {
           AWS.config.update({
-            region: 'ap-south-1', // use your bucket's region
+            region: 'eu-north-1', // use your bucket's region
           });
 
           const s3 = new AWS.S3();
           const url = new URL(resourceUrl);
           const key = decodeURIComponent(url.pathname.substring(1));
           const s3Params = {
-            Bucket: 'sims-school-files',
+            Bucket: 'sims-school',
             Key: key
           };
           await s3.deleteObject(s3Params).promise();
@@ -199,14 +199,14 @@ exports.deleteResource = async (req, res) => {
 
     if (publicId) {
       AWS.config.update({
-        region: 'ap-south-1', // use your bucket's region
+        region: 'eu-north-1', // use your bucket's region
       });
 
       const s3 = new AWS.S3();
       const url = new URL(resouceUrl);
       const key = decodeURIComponent(url.pathname.substring(1));
       const s3Params = {
-        Bucket: 'sims-school-files',
+        Bucket: 'sims-school',
         Key: key
       };
       await s3.deleteObject(s3Params).promise();

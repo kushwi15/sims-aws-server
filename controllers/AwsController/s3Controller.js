@@ -2,12 +2,12 @@ const AWS = require('aws-sdk');
 require('dotenv').config();
 
 AWS.config.update({
-  region: 'ap-south-1',
+  region: 'eu-north-1',
 });
 
 const s3 = new AWS.S3();
 
-const BUCKET_NAME = "sims-school-files";
+const BUCKET_NAME = "sims-school";
 
 /**
  * Calculate total size of files under a prefix (folder)
