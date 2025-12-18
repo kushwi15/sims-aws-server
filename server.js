@@ -59,7 +59,8 @@ app.use(cors({
     'http://40.192.110.75:5000',
 
     // Kushwinth
-    'http://16.171.13.197:5000'
+    'http://16.171.13.197:5000',
+    'https://sims-bdts-aws.vercel.app'
   ],
   credentials: true
 }));
