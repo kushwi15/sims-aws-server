@@ -60,7 +60,7 @@ app.use(cors({
 
     // Kushwinth
     'http://16.171.13.197:5000',
-    'https://sims-bdts-aws.vercel.app'
+    'https://sims-aws-web.vercel.app'
   ],
   credentials: true
 }));
